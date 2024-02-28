@@ -29,3 +29,16 @@ table {
     font-family: sans-serif;
     text-align: center;
     }
+
+    nav, h1, footer, main{
+      color: #851a51;
+  }
+  a{
+    color: #851a51;
+}
+
+img{
+    border:0;
+    width:88px;
+    height:31px;
+}

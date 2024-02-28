@@ -2,9 +2,29 @@ body{
     background-color: rgb(229, 156, 190);
     
 }
-section,h1,h2,nav, footer,p{
+
+section,h1,h2, h3, nav, footer,p{
     text-align: center;
 }
+
 nav, h1, footer, main{
     color: #851a51;
+}
+
+a{
+    color: #851a51;
+}
+
+img{
+    border:0;
+    width:88px;
+    height:31px;
+}
+
+ul{
+    text-align:left
+}
+
+p{
+    text-align: justify;
 }
