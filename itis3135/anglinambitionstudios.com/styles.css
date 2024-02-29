@@ -12,6 +12,20 @@
     margin-right: 5px;
 }
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leftColumn{
+    width: 45%;
+}
+
+.rightColumn{
+    width: 45%;
+}
+
 body{
     background-color: #567568;
 }
@@ -49,13 +63,13 @@ p{
     line-height: 1.4;
 }
 
-div{
+/* div{
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     font-size: x-large;
     font-weight: bold;
     margin-top: 5%;
-}
+} */
 
 ul {
     list-style-type: none;
@@ -74,6 +88,15 @@ ul li{
     color: whitesmoke;
 }
 
+h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 7%;
+    margin-bottom: 0;
+}
+
 .contactInfo{
     text-align: center;
 }
@@ -81,4 +104,5 @@ ul li{
 main p:last-child{
     line-height: 1.4;
     margin-bottom: 7%;
+    margin-top: 1.4px;
 }
