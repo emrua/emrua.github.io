@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Emma Anglin's Empathetic Armadillo || ITIS 3135 || FirstScripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/defaultscripts.js"></script>
+</head>
+<body>
+    <script src="scripts/defaultscripts.js"></script>
+    <div data-include="components/header.html"></div>
+    <h1>Welcome to FirstScripts!</h1>
+        <h3 id="timeDate"></h3>
+
+        <form id="userForm">
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName">
+
+            <label for="userMood">How are you feeling?</label>
+            <input type="text" id="userMood">
+
+            <label for="favoriteNumber">Favorite Number (0-10):</label>
+            <input type="number" id="favoriteNumber" min="0" max="10">
+
+            <button type="submit" onclick="submitForm()">Submit</button>
+        </form>
+
+        <div id="greeting"></div>
+
+        <button onclick="provideInsult()">Provide an Insult</button>
+        <button onclick="calculateTax()">Calculate Tax</button>
+        <button onclick="playSound()">Play Animal Sound</button>
+        <button onclick="countSheep()">Count Sheep</button>
+        <button onclick="getPolygon()">Get Polygon</button>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
