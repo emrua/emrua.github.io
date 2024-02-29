@@ -88,6 +88,10 @@ ul li{
     color: whitesmoke;
 }
 
+.rightAlign{
+    text-align: right;
+}
+
 h3{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
