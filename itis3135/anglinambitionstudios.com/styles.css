@@ -1,0 +1,84 @@
+/* CSS HEX 
+--oxford-blue: #011936ff;
+--hunter-green: #386641ff;
+--hookers-green: #567568ff;
+--sage: #cad593ff;
+--melon: #f7b2adff;
+*/
+
+*{
+    color: #f7b2ad;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body{
+    background-color: #567568;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #CAD593;;
+}
+
+nav a{
+    color: #CAD593;;
+}
+
+h2{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 7%;
+}
+
+p{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: medium;
+    line-height: 1.4;
+}
+
+div{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: "★"; 
+    color: #CAD593;
+    margin-right: 0.5em;
+}
+
+ul li{
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+.contactInfo{
+    text-align: center;
+}
+
+main p:last-child{
+    line-height: 1.4;
+    margin-bottom: 7%;
+}
