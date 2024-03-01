@@ -1,3 +1,28 @@
+/* For desktop screens */
+@media only screen and (min-width: 992px) {
+    main {
+        max-width: 1200px; /* Adjust as needed */
+        width: 90%; /* Adjust percentage based on design requirements */
+        margin: 0 auto; /* Centers the content horizontally */
+    }
+}
+
+/* For tablet screens */
+@media only screen and (max-width: 991px) {
+    main {
+        width: 90%; /* Adjust percentage based on design requirements */
+        margin: 0 auto; /* Centers the content horizontally */
+    }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90%; /* Adjust percentage based on design requirements */
+        margin: 0 auto; /* Centers the content horizontally */
+    }
+}
+
 body{
     background-color: rgb(229, 156, 190);
     
