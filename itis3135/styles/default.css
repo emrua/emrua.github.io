@@ -26,7 +26,7 @@ ul{
 }
 
 p{
-    text-align: justify;
+    text-align: center;
 }
 
 .wrapper {
@@ -53,3 +53,15 @@ footer{
 
 }
 
+.webpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color:#851a51
+}
+
+.index-page p:first-of-type{
+    font-size: xx-large;
+}
