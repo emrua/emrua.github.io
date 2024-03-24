@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby</title>
     <style>
-        /* Add your CSS styles here */
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #5E4B56;
@@ -18,85 +18,116 @@
             padding: 20px;
             text-align: center;
         }
-        main {
+        main{
             padding: 20px;
-            color: #d0bbc7
+            color: #d0bbc7;
+            margin-bottom: 150px;
         }
         footer {
             background-color: #333;
             color: #d0bbc7;
             text-align: center;
-            padding: 10px;
+            padding: 5px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            height: 150px;
+        }
+        main figure img {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+            width: 300px;   
+        }
+
+        a {
+           color: #d0bbc7; 
         }
         
+        main section {
+        display: none; 
+    }
+    main #what {
+        display: block; 
+    }
+
     </style>
 </head>
 <body>
     <header>
         <h1>My Baking Hobby</h1>
+        <nav>
+            
+            ☆<a href="#what" onclick="showSection('what')">What</a> 
+            ☆<a href="#who" onclick="showSection('who')">Who</a>
+            ☆<a href="#when" onclick="showSection('when')">When</a>
+            ☆<a href="#where" onclick="showSection('where')">Where</a>
+            ☆<a href="#how" onclick="showSection('how')">How</a>
+            ☆<a href="#why" onclick="showSection('why')">Why</a>
+        </nav>
     </header>
     <main>
-        <section id="who">
-            <h2>Who</h2>
-            <p>Hi there! I'm passionate about baking and excited to share my journey with you. Baking has been a part of my life for as long as I can remember. Whether it's whipping up a batch of cookies or creating intricate cakes, I find joy in every step of the baking process.</p>
-            <figure>
-                <img src="who.png" alt="Baker at work">
-                <figcaption>AI-Generated Image: Baker at work</figcaption>
-            </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante quis luctus efficitur. Nullam sed felis ac velit malesuada congue. Duis consectetur elit id nulla bibendum, a ultrices enim tincidunt.</p>
-        </section>
-    
         <section id="what">
             <h2>What</h2>
             <p>Welcome to my baking world! Here, I'll share my favorite recipes, tips, and tricks. From classic chocolate chip cookies to elaborate celebration cakes, there's something for everyone to enjoy. Let's explore the wonderful world of baking together!</p>
             <figure>
-                <img src="what.png" alt="Assorted baked goods">
+                <img src="images/what.png" alt="Assorted baked goods">
                 <figcaption>AI-Generated Image: Assorted baked goods</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante quis luctus efficitur. Nullam sed felis ac velit malesuada congue. Duis consectetur elit id nulla bibendum, a ultrices enim tincidunt.</p>
+            <p>The beauty in baking is the vastness of it. It could be as simple as pancakes or as complex as a macaroon and either choice is a wonderful experience to bake. So don't be frozen in fear from the complex recipes becuase for every complex recipe there is a dozen of simple ones that are just as delicious.</p>
         </section>
-    
+        
+        <section id="who">
+            <h2>Who</h2>
+            <p>Hi there! I'm passionate about baking and excited to share my journey with you. Baking has been a part of my life for as long as I can remember. Whether it's whipping up a batch of cookies or creating intricate cakes, I find joy in every step of the baking process.</p>
+            <figure>
+                <img src="images/who.png" alt="Baker at work">
+                <figcaption>AI-Generated Image: Baker at work</figcaption>
+            </figure>
+            <p>Baking is for anyone and everyone. Some people are intimidated by it but it is as simple as following the steps to a recipe. Create something you love to eat today!</p>
+        </section>
+
         <section id="when">
             <h2>When</h2>
             <p>Baking knows no bounds when it comes to time. Whether it's a lazy Sunday afternoon or a hectic weekday evening, there's always time to indulge in baking. Join me as we explore the best times to bake and enjoy delicious treats.</p>
             <figure>
-                <img src="when_image.jpg" alt="Baking at different times of the day">
+                <img src="images/when.png" alt="Baking at different times of the day">
                 <figcaption>AI-Generated Image: Baking at different times of the day</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante quis luctus efficitur. Nullam sed felis ac velit malesuada congue. Duis consectetur elit id nulla bibendum, a ultrices enim tincidunt.</p>
+            <p>Some aspects of baking can be really time comsuming such as bread or cinnamon rolls. But others like pancakes or cookies don't take much time at all so no matter  how much time you have you can bake something!</p>
         </section>
     
         <section id="where">
             <h2>Where</h2>
             <p>Baking can be done anywhere, from the comfort of your own kitchen to outdoor picnics. Join me as we discover the best locations for baking adventures. Whether it's in a cozy bakery or a bustling farmers market, there's inspiration to be found everywhere.</p>
             <figure>
-                <img src="where_image.jpg" alt="Baking in different locations">
+                <img src="images/where.png" alt="Baking in different locations">
                 <figcaption>AI-Generated Image: Baking in different locations</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante quis luctus efficitur. Nullam sed felis ac velit malesuada congue. Duis consectetur elit id nulla bibendum, a ultrices enim tincidunt.</p>
+            <p>Something I love about baking is that you can do it anywhere. At you own home or on vacation you can do it anywhere.</p>
         </section>
     
         <section id="how">
             <h2>How</h2>
             <p>Ready to roll up your sleeves and get baking? Join me as we dive into the how-tos of baking. From essential techniques like mixing and kneading to advanced skills like decorating and pastry making, we'll cover it all.</p>
             <figure>
-                <img src="how_image.jpg" alt="Baking techniques">
+                <img src="images/how.png" alt="Baking techniques">
                 <figcaption>AI-Generated Image: Baking techniques</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante quis luctus efficitur. Nullam sed felis ac velit malesuada congue. Duis consectetur elit id nulla bibendum, a ultrices enim tincidunt.</p>
+            <p>Some common techniques are kneading, folding, creaming, and much more. Theres always something new to learn. </p>
         </section>
     
         <section id="why">
             <h2>Why</h2>
             <p>Why do I bake? For me, baking is more than just following a recipe. It's a creative outlet, a way to express myself, and a means of bringing joy to others. Join me as we explore the deeper reasons behind our love for baking.</p>
             <figure>
-                <img src="why_image.jpg" alt="Reasons to bake">
+                <img src="images/why.png" alt="Reasons to bake">
                 <figcaption>AI-Generated Image: Reasons to bake</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ante quis luctus efficitur. Nullam sed felis ac velit malesuada congue. Duis consectetur elit id nulla bibendum, a ultrices enim tincidunt.</p>
+            <p>Baking can be a stress reliver and much more than just a hobby. It can be used to show others your appriciation and love for them.
+            </p>
+            
         </section>
     </main>
     <footer>
@@ -113,5 +144,19 @@
             <img  src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
              </a>
     </footer>
+
+    <script>
+        // JavaScript function to show/hide sections
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('main section');
+            for (var i = 0; i < sections.length; i++) {
+                if (sections[i].id === sectionId) {
+                    sections[i].style.display = 'block'; // Show the selected section
+                } else {
+                    sections[i].style.display = 'none'; // Hide other sections
+                }
+            }
+        }
+    </script>
 </body>
 </html>
