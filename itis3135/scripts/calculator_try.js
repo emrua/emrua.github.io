@@ -1,21 +1,15 @@
-let result = document.getElementById('result');
-
-function appendNumber(number) {
-    result.value += number;
-}
-
-function appendOperator(operator) {
-    result.value += operator;
+function showNum(num) {
+    document.getElementById('result').value += num;
 }
 
 function clearResult() {
-    result.value = '';
+    document.getElementById('result').value = '';
 }
 
 function calculate() {
     try {
-        result.value = eval(result.value);
+        document.getElementById('result').value = eval(document.getElementById('result').value);
     } catch (error) {
-        result.value = 'Error';
+        document.getElementById('result').value = 'Error';
     }
 }
