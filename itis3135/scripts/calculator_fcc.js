@@ -1,4 +1,4 @@
-const calculate = (n1, operator, n2) => {
+/*const calculate = (n1, operator, n2) => {
     let result = ''
     if (operator === 'add') {
       result = parseFloat(n1) + parseFloat(n2)
@@ -65,4 +65,58 @@ const calculate = (n1, operator, n2) => {
       }
     }
   })
-  
+  */
+
+  window.onload = function () {
+    document.getElementById("button4").onclick = showNum;
+    document.getElementById("button5").onclick = showNum;
+    document.getElementById("button6").onclick = showNum;
+    document.getElementById("button1").onclick = showNum;
+    document.getElementById("button2").onclick = showNum;
+    document.getElementById("button3").onclick = showNum;
+    document.getElementById("button0").onclick = showNum;
+
+    document.getElementById("buttonAdd").onclick = operatorClicked;
+    document.getElementById("buttonSubtract").onclick = operatorClicked;
+    document.getElementById("buttonMultiply").onclick = operatorClicked;
+    document.getElementById("buttonDivide").onclick = operatorClicked;
+
+    document.getElementById("buttonDecimal").onclick = decimalClicked;
+    document.getElementById("buttonClear").onclick = clearClicked;
+    document.getElementById("buttonCalculate").onclick = calculateClicked;
+};
+
+function showNum() {
+    document.getElementById("textNumber").value += this.textContent;
+}
+
+function operatorClicked() {
+    const displayedNum = document.getElementById("textNumber").value;
+    const lastChar = displayedNum[displayedNum.length - 1];
+    
+    if (!isNaN(lastChar)) {
+        document.getElementById("textNumber").value += this.textContent;
+    }
+}
+
+function decimalClicked() {
+    const displayedNum = document.getElementById("textNumber").value;
+    const lastNum = displayedNum.split(/[\+\-\*\/]/).pop();
+    
+    if (!lastNum.includes('.')) {
+        document.getElementById("textNumber").value += this.textContent;
+    }
+}
+
+function clearClicked() {
+    document.getElementById("textNumber").value = '0';
+}
+
+function calculateClicked() {
+    const displayedNum = document.getElementById("textNumber").value;
+    const lastChar = displayedNum[displayedNum.length - 1];
+    
+    if (!isNaN(lastChar)) {
+        document.getElementById("textNumber").value = eval(displayedNum);
+    }
+}
