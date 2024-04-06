@@ -28,6 +28,7 @@
 
 body{
     background-color: rgb(229, 156, 190);
+    text-align: center;
    
 }
 
@@ -252,4 +253,22 @@ button:focus {
   background-image: linear-gradient(to bottom, #fe886a, #ff7033);
   grid-column: -2;
   grid-row: 2 / span 4;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #851a51; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e166a6; /* Darker green on hover */
+}
+
+button:focus {
+  outline: none; /* Remove outline on focus */
 }
