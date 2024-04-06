@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Emma Anglin's Empathetic Armadillo || ITIS 3135 || Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <h2>Arrays</h2>
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput">
+    <label for="salaryInput">Salary:</label>
+    <input type="text" id="salaryInput">
+    <button onclick="addSalary()">Add</button>
+    <br><br>
+    <label for="modifySelect">Select Employee:</label>
+    <select id="modifySelect"></select>
+    <label for="newSalaryInput">New Salary:</label>
+    <input type="text" id="newSalaryInput">
+    <button onclick="modifySalary()">Modify</button>
+    <br><br>
+    <button onclick="displayResults()">Display Results</button>
+    <div id="results"></div>
+    <br><br>
+    <table id="results_table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="scripts/arrays.js"></script>
+</body>
+<div data-include="components/footer.html"></div>
+<script src="scripts/HTMLInclude.min.js"></script>
+
+</html>

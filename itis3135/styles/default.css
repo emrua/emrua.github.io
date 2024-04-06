@@ -38,7 +38,7 @@ section,h1,h2, h3, nav, footer,p{
 }
 
 
-nav, h1, h3, footer, main{
+nav, h1, h2, h3, footer, main{
     color: #851a51;
 }
 
@@ -255,7 +255,7 @@ button:focus {
   grid-row: 2 / span 4;
 }
 
-button {
+.toggleButton {
   padding: 10px 20px;
   background-color: #851a51; /* Green background */
   color: white;
@@ -265,10 +265,10 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.toggleButton:hover {
   background-color: #e166a6; /* Darker green on hover */
 }
 
-button:focus {
+.toggleButton:focus {
   outline: none; /* Remove outline on focus */
 }
