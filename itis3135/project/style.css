@@ -1,4 +1,18 @@
-body, header{
+body, header, a{
     background-color: #2B3A67;
     color: #FFC482;
+    text-align: center;
+}
+
+footer{
+    font-size: 13px;
+}
+
+h1, header, footer{
+    text-align: center;
+    color: #ffffff
+}
+
+ul{
+    text-align: left;
 }
