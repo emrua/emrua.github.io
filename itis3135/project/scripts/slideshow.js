@@ -23,7 +23,7 @@ function previousSlide() {
 }
 
 // Automatically advance to the next slide every 5 seconds
-setInterval(nextSlide, 5000); // Change interval time as needed
+setInterval(nextSlide, 10000); // Change interval time as needed
 
 // Show the first slide on page load
 showSlide(0);
