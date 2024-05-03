@@ -45,11 +45,14 @@
                 <label for="primaryPlatform">Primary Computer Platform:</label><br>
                 <input type="text" id="primaryPlatform" name="primaryPlatform" required><br><br>
     
-                <label for="courses">Courses currently taking:</label><br>
-                <div id="courseList">
-                    <input type="text" name="course" placeholder="Enter course name" required>
-                    <button type="button" id="addCourseButton">Add Course</button>
-                </div><br><br>
+                <label for="courses">Courses currently taking:</label>
+  <div id="courseEntries">
+    <div class="course-entry">
+      <input type="text" class="course" required id="courses">
+      <button type="button" class="delete-btn" onclick="deleteCourse(this)">Delete</button>
+    </div>
+  </div>
+  <button type="button" onclick="addCourse()">Add Course</button>
     
                 <label for="funnyThing">Funny thing?</label><br>
                 <textarea id="funnyThing" name="funnyThing"></textarea><br><br>
@@ -67,5 +70,6 @@
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/byo_intro.js" ></script>
 </body>
 </html>

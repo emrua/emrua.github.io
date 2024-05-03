@@ -34,24 +34,26 @@ function resetForm() {
     document.getElementById("formResult").innerHTML = "";
 }
 
-function addCourseTextBox() {
-    const courseList = document.getElementById("courseList");
-    const newCourseInput = document.createElement("input");
-    newCourseInput.type = "text";
-    newCourseInput.name = "course";
-    newCourseInput.placeholder = "Enter course name";
-    courseList.appendChild(newCourseInput);
 
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.onclick = function() {
-        courseList.removeChild(newCourseInput);
-        courseList.removeChild(deleteButton);
-    };
-    courseList.appendChild(deleteButton);
-}
 
-document.getElementById("addCourseButton").addEventListener("click", addCourseTextBox);
+function addCourse() {
+    const courseEntries = document.getElementById('courseEntries');
+    const newEntry = document.createElement('div');
+    newEntry.classList.add('course-entry');
+    newEntry.innerHTML = `
+      <input type="text" class="course" required>
+      <button type="button" class="delete-btn" onclick="deleteCourse(this)">Delete</button>
+    `;
+    courseEntries.appendChild(newEntry);
+  }
+  
+  // Function to delete course entry field
+  function deleteCourse(btn) {
+    const courseEntry = btn.parentElement;
+    courseEntry.remove();
+  }
+
+
 
 function submitForm() {
     const form = document.getElementById("introForm");
