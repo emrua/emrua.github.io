@@ -11,41 +11,22 @@
     <div data-include="component\project_header.html"></div>
     <main>
         <h1>Gallery</h1>
-        <div class="slideshow">
-            <div class="slide">
-                <img src="images/Construction.jpg" alt="First Slide">
+        <div id="slideshow-container">
+            <div id="slideshow">
+                <img src="" alt="Slideshow Image" id="slide-img">
+                <p id="caption"></p>
             </div>
-            <div class="slide">
-                <img src="images/counter.jpg" alt="Second Slide">
-            </div>
-            <div class="slide">
-                <img src="images/doghouse.jpg" alt="Third Slide">
-            </div>
-            <div class="slide">
-                <img src="images/fence.jpg" alt="Fourth Slide">
-            </div>
-            <div class="slide">
-                <img src="images/hauling.jpg" alt="Fifth Slide">
-            </div>
-            <div class="slide">
-                <img src="images/pingpong1.jpg" alt="Sixth Slide">
-            </div>
-            <div class="slide">
-                <img src="images/pingpong2.jpg" alt="Seventh Slide">
-            </div>
-            <div class="slide">
-                <img src="images/ramp.jpg" alt="Eighth Slide">
-            </div>
+        <ul id="thumbnails">
+            <!-- Thumbnails will be generated dynamically using jQuery -->
+        </ul>
         
-            <!-- Navigation buttons -->
-            <button class="prev" onclick="previousSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
 
         <figcaption>Some Of My Projects</figcaption>
     </main>
     <div data-include="component/project_footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="scripts/slideshow.js"></script>
 </body>
 </html>

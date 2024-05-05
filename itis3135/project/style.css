@@ -59,6 +59,44 @@ ul{
     background-color: rgba(0, 0, 0, 0.7); /* Hover effect */
 }
 
-div{
+#contact div{
     display: none;
 }
+
+#slideshow {
+    display: inline-block;
+    transform: scale();
+  }
+  
+  #slide-img {
+    width: 80%; /* Make the current image larger */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #thumbnails {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  #thumbnails li {
+    display: inline-block;
+    margin: 0px;
+  }
+  
+  #thumbnails img {
+    width: 50px; /* Adjust the thumbnail size as needed */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  #thumbnails img.active {
+    border: 2px solid red; /* Highlight the active thumbnail */
+  }
+  
+  #currentIndex {
+    transform: scale(2);
+  }
