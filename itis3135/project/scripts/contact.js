@@ -48,6 +48,8 @@ $(document).ready(function() {
         } else {
             // Show confirmation alert
             alert("Thank you! We will reach out shortly.");
+            document.getElementById("inquiry-form").reset();
+            return false;
         }
     });
 });

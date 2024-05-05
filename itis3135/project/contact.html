@@ -12,7 +12,7 @@
     <div data-include="component\project_header.html"></div>
     <main>
         <h1>Contact Us!</h1>
-        <form action="submit_form.php" method="post" id="inquiry-form">
+        <form action="contact.html" method="post" id="inquiry-form">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
         
@@ -33,11 +33,11 @@
             </select><br><br>
         
             <!-- Dynamic content based on inquiry type -->
-            <div id="additional-info" style="display: none;">
+            <div id="additional-info" >
                 <!-- For porch updates and screenings -->
-                <div id="porch-sqft" style="display: none;">
+                <div id="porch-sqft" >
                     <label for="porch-sqft">Porch Square Footage:</label><br>
-                    <select id="porch-sqft-select" name="porch_sqft">
+                    <select id="porch-sqft" name="porch_sqft">
                         <option value="">Select...</option>
                         <option value="60-100">60-100 sq ft</option>
                         <option value="101-200">101-200 sq ft</option>
@@ -47,9 +47,9 @@
                 </div>
         
                 <!-- For roofing -->
-                <div id="roof-sqft" style="display: none;">
+                <div id="roof-sqft" >
                     <label for="roof-sqft">Roofing Square Footage:</label><br>
-                    <select id="roof-sqft-select" name="roof_sqft">
+                    <select id="roof-sqft" name="roof_sqft">
                         <option value="">Select...</option>
                         <option value="1000-1500">1000-1500 sq ft</option>
                         <option value="1501-2000">1501-2000 sq ft</option>
@@ -59,7 +59,7 @@
                 </div>
         
                 <!-- For odds and ends, and other -->
-                <div id="details" style="display: none;">
+                <div id="details">
                     <label for="additional-details">Details:</label><br>
                     <textarea id="additional-details" name="additional_details" rows="4" placeholder="Describe what you need"></textarea><br><br>
                 </div>

@@ -58,3 +58,7 @@ ul{
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.7); /* Hover effect */
 }
+
+div{
+    display: none;
+}
