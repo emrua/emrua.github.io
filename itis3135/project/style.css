@@ -100,3 +100,72 @@ ul{
   #currentIndex {
     transform: scale(2);
   }
+
+  .slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden; /* Hide overflow to create a seamless transition */
+}
+
+.slide {
+    display: none; /* Hide slides initially */
+    width: 100%;
+    transition: 1s; /* Add smooth transitions */
+}
+
+.slideshow img {
+    width: 100%; /* Ensure images cover the entire slide */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px; /* Position the previous button on the left */
+}
+
+.next {
+    right: 10px; /* Position the next button on the right */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Hover effect */
+}
+
+
+ figcaption{
+    font-size: 20px;
+    
+}
+
+.gallery .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery .content {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing between content and image */
+}
+
+.gallery .image img, p{
+    max-width: 100%; /* Ensure image fits within container */
+    color: #ffffff
+}
+
+.gallery{
+    margin-left: 20px;
+    margin-right: 20px;
+}
